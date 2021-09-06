@@ -7,8 +7,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '/styles/theme';
 import '/styles/globals.css';
 
-const { publicRuntimeConfig } = getConfig();
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 const { HOTPEPPER_API_KEY } = publicRuntimeConfig;
+console.log("test"+JSON.stringify(publicRuntimeConfig));
 
 const { APP_NAME } = publicRuntimeConfig;
 
