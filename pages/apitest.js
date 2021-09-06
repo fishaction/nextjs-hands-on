@@ -6,8 +6,7 @@ const Example = ({ gourmet ,test}) => {
     <div>
       <h1>gourmet</h1>
       <div>{JSON.stringify(gourmet)}</div>
-      
-      <div>{test}</div>
+
     </div>
   );
 };
