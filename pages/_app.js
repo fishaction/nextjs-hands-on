@@ -8,6 +8,8 @@ import theme from '/styles/theme';
 import '/styles/globals.css';
 
 const { publicRuntimeConfig } = getConfig();
+const { HOTPEPPER_API_KEY } = publicRuntimeConfig;
+
 const { APP_NAME } = publicRuntimeConfig;
 
 class MyApp extends App {

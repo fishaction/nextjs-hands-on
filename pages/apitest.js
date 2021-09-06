@@ -1,11 +1,13 @@
 import React from 'react';
 import getConfig from 'next/config';
 
-const Example = ({ gourmet }) => {
+const Example = ({ gourmet ,test}) => {
   return (
     <div>
       <h1>gourmet</h1>
       <div>{JSON.stringify(gourmet)}</div>
+      
+      <div>{test}</div>
     </div>
   );
 };
@@ -22,6 +24,7 @@ export async function getServerSideProps() {
   return {
     props: {
       gourmet: data,
+      test: gourmetUrl,
     },
   };
 }
